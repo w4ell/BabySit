@@ -27,7 +27,39 @@ const AdminBabyDetails = () => {
       <div className="flex flex-col md:flex-row gap-10 m-10  justify-center">
         <div className="bg-white dark:text-gray-200 p-6 rounded-2xl w-full md:w-2/3">
           <Header category="" title="Détails du bebe" />
-          <div>{/* ici statisque*/}</div>
+          <p className="font-semibold text-xl dark:text-gray-200 mt-5">
+            Fréquence cardiaque
+          </p>
+          <iframe
+            width="100%"
+            height="641"
+            frameborder="0"
+            src="https://stem.ubidots.com/app/dashboards/public/widget/NxqNaSj7bzKJUgCVuFT6qMRkTC81itBIovViMhSXGJE?embed=true"
+          ></iframe>
+          <div className="mt-5 w-full flex flex-row">
+            <div className="w-1/2 flex flex-col">
+              <p className="font-semibold text-xl dark:text-gray-200 mt-5">
+                Température
+              </p>
+              <iframe
+                width="100%"
+                height="641"
+                frameborder="0"
+                src="https://stem.ubidots.com/app/dashboards/public/widget/drUSbUQYHnKRsQ9i6zahsSPPMXsTO6x9XCpHelIIoh4?embed=true"
+              ></iframe>
+            </div>
+            <div className="w-1/2 flex flex-col">
+              <p className="font-semibold text-xl dark:text-gray-200 mt-5">
+                Humidité
+              </p>
+              <iframe
+                width="100%"
+                height="641"
+                frameborder="0"
+                src="https://stem.ubidots.com/app/dashboards/public/widget/3cjmA_1-jIFvJGd7bw8jSmEXW1hYm2kl03rK-jnFfe0?embed=true"
+              ></iframe>
+            </div>
+          </div>
         </div>
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl w-full md:w-1/3">
           <div className="flex gap-5 justify-center items-center mt-6 border-color border-b-1 pb-6">
